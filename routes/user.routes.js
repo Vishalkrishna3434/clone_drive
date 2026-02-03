@@ -4,7 +4,7 @@ const router=express.Router();
 /* /user/test */
 
 router.get("/test",(req,res)=>{
-  res.send("User test route");
+  res.render('register');
 })
 
 module.exports=router;
