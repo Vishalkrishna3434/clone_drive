@@ -1,9 +1,7 @@
-const mongoose=require('mongoose');
+const mongoose = require('mongoose');
 
-const userModel=new mongoose.create({
-  username:String,
-  email:String,
-  password:String
-})
+function connectToDB() {
+  const userModel = new mongoose.connect(process.env.MONGO_URL)
+}
 
-module.exports=userModel
+module.exports = userModel

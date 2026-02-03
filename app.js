@@ -1,6 +1,9 @@
 const express=require('express');
 const userRoute=require('./routes/user.routes')
+const dotenv=require('dotenv');
 const app=express();
+
+dotenv.config();
 
 app.set("view engine",'ejs');
 app.use(express.json());
